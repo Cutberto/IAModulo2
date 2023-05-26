@@ -1,10 +1,7 @@
-# Clasificador de imagenes con deep learning
+# Clasificación de imagenes utilizando MobileNet V2
 
-Este proyecto consiste en un clasificador binario de imagenes utilizando Deep Learning.
-El dataset consiste en imagenes de osos y pandas, constando de 250 imagenes de cada clase para entrenamiento y 50 imagenes de cada clase para pruebas.
+Este repositorio contiene dos implementaciones diferentes de clasificación de imagenes utlizando MobileNet V2 como modelo base.
 
-## 19/05/2023
+En la carpeta pandaorbear, se encuentra un clasificador básico de imágenes que distingue entre pandas y osos. Para mas detalles, revisar el archivo readme de la carpeta.
 
-Se carga la versión inicial del código, la cual contiene el código para cargar a memoria el dataset y aplicar data augmentation para tener una mayor cantidad de muestras para cada categoría, y de esta forma ayudar a que el modelo sea capaz de reconocer los animales en situaciones diferentes a las incluidas en el dataset original.
-
-Se incluye además una red neuronal simple para verificar el correcto funcionamiento del data augmentation.
+En la carpeta image_segmentation, se encuentra una implementación más avanzada de clasificación de imagenes, la cual es capaz de distinguir la categoría de los pixeles de cada imagen y separar el objeto principal del fondo. En este caso, el dataset utilizado es oxford_iiit_pet, y el modelo distingue entre mascota, borde de mascota y fondo. Para mas detalles, revisar el archivo readme de la carpeta.
